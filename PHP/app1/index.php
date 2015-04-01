@@ -126,9 +126,7 @@ use Att\Api\Util\Util;
             <div class="col-lg-12">
               <div class="col-lg-1"></div>
               <div class="col-lg-10">
-                <div class="alert alert-warning text-center">
-                  <strong>This application runs best in chrome</strong>
-                </div>
+                <div class="alert alert-warning text-center"><strong>This application runs best in chrome</strong></div>
               </div>
               <div class="col-lg-1"></div>
             </div>
@@ -415,7 +413,7 @@ use Att\Api\Util\Util;
                           <input name="phoneNumber" type="text" 
                               class="form-control" placeholder="Enter phone number or user name"
                               data-toggle="tooltip" data-placement="right"
-                              data-title="Format must be one of the following: 15555555555 (number with country code), or user@domain.com">
+                              data-title="Format must be one of the following: 12535550129 (number with country code), or user@domain.com">
                         </div><!--/.col-lg-4-->
                       </div><!--/.row-->
                       <div class="row">
@@ -457,7 +455,7 @@ use Att\Api\Util\Util;
                                 </div>
                                 <div class="col-lg-10 col-sm-10">
                                   <div id="remoteAudioElement">
-                                    <img width="25" height="25" data-file-height="500" data-file-width="500" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/38px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/50px-Speaker_Icon.svg.png 2x" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/25px-Speaker_Icon.svg.png" alt="Speaker Icon.svg">
+                                    <img width="25" height="25" data-file-height="500" data-file-width="500" src="https://lprod.code-api-att.com/public_files/img/25px-Speaker_Icon.svg.png" alt="Speaker Icon.svg">
                                   </div>
                                 </div>
                               </div>
@@ -474,7 +472,7 @@ use Att\Api\Util\Util;
                                 </div>
                                 <div class="col-lg-10 col-sm-10">
                                   <div id="localAudioElement">
-                                    <img width="25" height="25" data-file-height="500" data-file-width="500" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/38px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/50px-Speaker_Icon.svg.png 2x" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/25px-Speaker_Icon.svg.png" alt="Speaker Icon.svg">
+                                    <img width="25" height="25" data-file-height="500" data-file-width="500" src="https://lprod.code-api-att.com/public_files/img/25px-Speaker_Icon.svg.png" alt="Speaker Icon.svg">
                                   </div>
                                 </div>
                               </div>
@@ -543,7 +541,7 @@ use Att\Api\Util\Util;
                             <input name="participant" type="text"
                                 class="form-control" placeholder="Participant"
                                 data-toggle="tooltip" data-placement="left"
-                                data-title="Format must be one of the following: 15555555555 (number with country code), or user@domain.com">
+                                data-title="Format must be one of the following: 12535550129 (number with country code), or user@domain.com">
                             <button id="addParticipant" type="button" class="btn btn-primary">
                               Add Participant
                             </button>
@@ -572,7 +570,7 @@ use Att\Api\Util\Util;
                                 </div>
                                 <div class="col-lg-10 col-sm-10">
                                   <div id="confRemoteAudioElement">
-                                    <img width="25" height="25" data-file-height="500" data-file-width="500" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/38px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/50px-Speaker_Icon.svg.png 2x" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/25px-Speaker_Icon.svg.png" alt="Speaker Icon.svg">
+                                    <img width="25" height="25" data-file-height="500" data-file-width="500" src="https://lprod.code-api-att.com/public_files/img/25px-Speaker_Icon.svg.png" alt="Speaker Icon.svg">
                                   </div>
                                 </div>
                               </div>
@@ -589,7 +587,7 @@ use Att\Api\Util\Util;
                                 </div>
                                 <div class="col-lg-10 col-sm-10">
                                   <div id="confLocalAudioElement">
-                                    <img width="25" height="25" data-file-height="500" data-file-width="500" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/38px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/50px-Speaker_Icon.svg.png 2x" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/25px-Speaker_Icon.svg.png" alt="Speaker Icon.svg">
+                                    <img width="25" height="25" data-file-height="500" data-file-width="500" src="https://lprod.code-api-att.com/public_files/img/25px-Speaker_Icon.svg.png" alt="Speaker Icon.svg">
                                   </div>
                                 </div>
                               </div>

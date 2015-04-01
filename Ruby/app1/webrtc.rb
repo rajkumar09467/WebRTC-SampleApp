@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-# Copyright 2014 AT&T
+# Copyright 2015 AT&T
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,13 +17,8 @@
 require 'sinatra'
 require 'sinatra/config_file'
 
-# require as a gem file load relative if fails
-begin
-  require 'att/codekit'
-rescue LoadError
-  # load bundled codekit if not installed via gems
-  require_relative 'submodules/codekit/lib/att/codekit'
-end
+# Require codekit for token handling
+require 'att/codekit'
 
 include Att::Codekit
 
@@ -70,9 +65,7 @@ class WebRTC < Sinatra::Application
   # Return the url required for consent to the SDK
   post '/oauth/authorize' do
     url = AuthCodeService.generateConsentFlowUrl
-    {
-      :consent_url => url 
-    }.to_json()
+    { :consent_url => url }.to_json()
   end
 
   # Return a token to the SDK
@@ -121,15 +114,4 @@ class WebRTC < Sinatra::Application
       body e.to_s
     end
   end
-
-  # TODO: implement users
-  #get '/users' do
-  #  {
-  #    "name" => "John Connor",
-  #    "userid" => "johncon",
-  #    "password" => "john",
-  #    "type" => "VTN",
-  #    "vtn" => "15155725795"
-  #  }.to_json
-  #end
 end

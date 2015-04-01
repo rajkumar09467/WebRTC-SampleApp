@@ -36,11 +36,6 @@ $(document).ready(function() {
             'Browser not certified, cannot guarantee full functionality!');
     }
 
-    ATT.rtc.configure({ 
-            ewebrtc_domain: config.ewebrtc_domain,
-            api_endpoint: config.fqdn
-    });
-
     var phone = ATT.rtc.Phone.getPhone();
     var dhs = config.dhs;
     var token_endpoint = config.token_endpoint;
