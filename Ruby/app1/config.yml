@@ -1,4 +1,4 @@
-# Mandatory parameter that should be set to the registered application's 
+# Mandatory parameter that should be set to the registered applications 
 # 'API Key' value.
 client_id:          
 
