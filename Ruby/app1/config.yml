@@ -7,7 +7,7 @@ client_id:
 client_secret:       
 
 # Set the value as per your organizations domain for webrtc
-account_domain: '@mydomain.org'
+account_domain: '@example.org'
 
 # Fully Qualified Domain Name. Mandatory parameter that points to the location
 # of AT&T's API.
@@ -16,6 +16,9 @@ fqdn:   'https://api.att.com'
 # Mandatory parameter that specifies the authorization redirect URL. This is
 # the URL that the consent flow will redirect to.
 consent_redirect: 'http://localhost:9292'
+
+# URL where the server is accessed
+dhs: 'http://localhost:9292'
 
 # Valid e911 identifier that you have generated using the e911 api
 e911id: 'valid e911 id'
@@ -35,3 +38,7 @@ download_link: #
 # Set this to use a proxy on the server side
 proxy: 
 
+# These should not change for this example
+token_endpoint: '/oauth/token'
+authorize_endpoint: '/oauth/authorize'
+associate_endpoint: '/oauth/associate'

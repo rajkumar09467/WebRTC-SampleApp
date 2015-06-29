@@ -36,11 +36,13 @@ $(document).ready(function() {
             'Browser not certified, cannot guarantee full functionality!');
     }
 
+    // Load some config values hidden in html
+    var dhs = $('#dhs').text();
+    var token_endpoint =  $('#token_endpoint').text();
+    var authorize_endpoint = $('#authorize_endpoint').text();
+    var associate_endpoint = $('#associate_endpoint').text();
+
     var phone = ATT.rtc.Phone.getPhone();
-    var dhs = config.dhs;
-    var token_endpoint = config.token_endpoint;
-    var authorize_endpoint = config.authorize_endpoint;
-    var associate_endpoint = config.associate_endpoint;
     var sessionInfo = null;
     var token = null;
 

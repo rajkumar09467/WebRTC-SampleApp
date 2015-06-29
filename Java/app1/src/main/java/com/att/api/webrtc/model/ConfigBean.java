@@ -39,4 +39,20 @@ public class ConfigBean implements Serializable {
     public String getAccountDomain() throws IOException {
         return getConfig().getProperty("accountDomain");
     }
+
+    public String getFqdn() throws IOException {
+        return getConfig().getApiFQDN();
+    }
+    public String getDhs() throws IOException {
+        return getConfig().getProperty("dhs");
+    }
+    public String getTokenEndpoint() throws IOException {
+        return getConfig().getProperty("tokenEndpoint");
+    }
+    public String getAuthorizeEndpoint() throws IOException {
+        return getConfig().getProperty("authorizeEndpoint");
+    }
+    public String getAssociateEndpoint() throws IOException {
+        return getConfig().getProperty("associateEndpoint");
+    }
 }

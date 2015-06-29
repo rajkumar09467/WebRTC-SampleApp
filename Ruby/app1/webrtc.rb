@@ -26,13 +26,13 @@ class WebRTC < Sinatra::Application
   #############################################
   ####### Configure the required values #######
   #############################################
+  use Rack::Session::Cookie, 
+    :key => 'rack.webrtc.session', 
+    :path => "/",
+    :secret => settings.session_secret
 
   configure do
-    enable :sessions
     config_file 'config.yml'
-
-    use Rack::Session::Cookie, :key => 'rack.session'
-    set :session_secret, settings.session_secret
 
     VTN_NUMBERS = settings.vtn_numbers.split(',')
 
@@ -74,11 +74,9 @@ class WebRTC < Sinatra::Application
       token = nil
       if request[:code]
         code = request[:code]
-        #token = session[:auth_token] || AuthCodeService.createToken(code)
         token = AuthCodeService.createToken(code)
         session[:auth_token] = token
       else
-        #token = session[:cred_token] || CredService.createToken
         token = CredService.createToken
         session[:cred_token] = token
       end

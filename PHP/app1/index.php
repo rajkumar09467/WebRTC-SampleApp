@@ -142,12 +142,12 @@ use Att\Api\Util\Util;
             <div id="oauthCollapse" class="panel-collapse collapse in">
               <div class="panel-body">
                 <ul class="nav nav-tabs" role="tablist">
-                  <li class="active"><a href="#mobile" role="tab" data-toggle="tab">AT&amp;T Mobile Number</a></li>
-                  <li><a href="#VTN" role="tab" data-toggle="tab">Virtual Number</a></li>
+                  <!--<li class="active"><a href="#mobile" role="tab" data-toggle="tab">AT&amp;T Mobile Number</a></li>-->
+                  <li class="active"><a href="#VTN" role="tab" data-toggle="tab">Virtual Number</a></li>
                   <li><a href="#account" role="tab" data-toggle="tab">Account ID</a></li>
                 </ul>
                 <div class="tab-content">
-                  <div class="tab-pane active" id="mobile">
+                  <div class="tab-pane active" id="mobile" hidden>
                     <div class="row">
                       <div class="col-lg-12">
                         <p>Authorize using an AT&amp;T mobile number.</p>
@@ -196,7 +196,7 @@ use Att\Api\Util\Util;
                       </div><!--./mobileAssociate-->
                     </div><!--./row-->
                   </div><!--./tab-pane #mobile-->
-                  <div class="tab-pane" id="VTN">
+                  <div class="tab-pane active" id="VTN">
                     <div class="row">
                       <div class="col-lg-12">
                         <p>Authorize using a Virtual Number.</p>
