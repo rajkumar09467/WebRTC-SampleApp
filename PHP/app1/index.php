@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/config.php';
 require_once __DIR__ . '/lib/Util/Util.php';
-use Att\Api\Util\Util;
+use Att\Api\Util\Util
 ?>
 <!DOCTYPE html>
 <html lang="en">
